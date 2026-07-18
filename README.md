@@ -6,7 +6,7 @@ Built during my second industrial training placement (04 Aug 2025 – 26 Oct 202
 
 > **Context:** I'm an Electrical & Information Engineering undergraduate specializing in **Computer Networking, Telecommunications & Security** (Electrical Engineering minor). This project was my hands-on introduction to designing and securing a real device-to-cloud data network — Wi-Fi transport, MQTT pub/sub messaging, remote firmware delivery, and the access-control/authentication trade-offs of a live industrial deployment.
 
-![E-25 press ThingsBoard dashboard, showing live production counters, shift assignees, and hourly count chart](docs/images/new dash.png)
+![E-25 press ThingsBoard dashboard, showing live production counters, shift assignees, and hourly count chart](docs/images/new.png)
 *The pilot dashboard for the E-25 press — the same architecture, later replicated per-device for E-69/E-103/E-94.*
 
 ---
