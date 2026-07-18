@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../../../Arduino/sketch_aug13a"
+		},
+		{
+			"name": "250813-100515-esp32dev",
+			"path": "../../250813-100515-esp32dev"
+		},
+		{
+			"name": "E-25_Press",
+			"path": ".."
+		}
+	],
+	"settings": {}
+}

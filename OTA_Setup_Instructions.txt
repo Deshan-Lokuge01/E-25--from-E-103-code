@@ -1,0 +1,24 @@
+# After first upload, modify your platformio.ini like this:
+
+[env:esp32dev]
+platform = espressif32@6.8.1
+board = esp32dev
+framework = arduino
+monitor_speed = 115200
+upload_speed = 460800
+
+# Comment out cable upload, enable OTA:
+; upload_port = COM5  ; Comment this out after first upload
+
+; Library dependencies
+lib_deps =
+    knolleary/PubSubClient @ ^2.8
+    bblanchon/ArduinoJson @ ^6.21.3
+
+; Build flags - simplified
+build_flags = 
+    -D MQTT_MAX_PACKET_SIZE=1024
+
+# OTA Configuration (enable after first cable upload)
+upload_protocol = espota
+upload_port = E25-Press-Monitor.local  ; or use IP address like 192.168.1.100

@@ -1,0 +1,45 @@
+ARDUINO IDE CONVERSION GUIDE FOR ESP32 PROJECT
+==============================================
+
+STEP 1: Install Arduino IDE ESP32 Support
+-----------------------------------------
+1. Download Arduino IDE from: https://www.arduino.cc/en/software
+2. Open Arduino IDE
+3. Go to File → Preferences
+4. In "Additional Board Manager URLs" add:
+   https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
+5. Go to Tools → Board → Board Manager
+6. Search "ESP32" and install "esp32 by Espressif Systems"
+
+STEP 2: Install Required Libraries
+----------------------------------
+Go to Tools → Manage Libraries and install:
+- PubSubClient by Nick O'Leary (version 2.8)
+- ArduinoJson by Benoit Blanchon (version 6.21.3)
+
+STEP 3: Arduino IDE Settings
+----------------------------
+- Board: "ESP32 Dev Module"
+- Upload Speed: "115200"
+- CPU Frequency: "240MHz (WiFi/BT)"
+- Flash Frequency: "80MHz"
+- Flash Mode: "QIO"
+- Flash Size: "4MB (32Mb)"
+- Partition Scheme: "Default 4MB with spiffs"
+- Core Debug Level: "None"
+- Port: COM5 (your ESP32 port)
+
+STEP 4: Copy Code
+-----------------
+1. Create new sketch in Arduino IDE
+2. Copy entire main.cpp content to the new sketch
+3. Save as "E25_Press_Counter"
+4. Upload to ESP32
+
+STEP 5: Monitor Serial Output
+-----------------------------
+- Open Serial Monitor (Tools → Serial Monitor)
+- Set baud rate to 115200
+- Reset ESP32 to see startup messages
+
+NOTE: This is a temporary solution. PlatformIO should be fixed with the antivirus exclusions.
